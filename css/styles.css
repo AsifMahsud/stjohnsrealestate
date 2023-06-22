@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 400px;
+  margin: auto;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container {
+  padding: 16px;
+}
+
+.avatar {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 16px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-object-fit: cover;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.bio-title h1 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.bio-description p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.contacts-button {
+  text-align: center;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.contacts-button a {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 74px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.fas {
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.img-banner {
+  text-align: center;
+  background: #fff;
+  color: #000;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 10px 35px -5px rgba(0, 0, 0, 0.2);
+}
+
+.img-banner-a {
+  text-decoration: none;
+  color: black;
+}
+
+.pad {
+  padding: 15px;
+}
+
+.pad a {
+  text-decoration: none;
+  color: black;
+  text-align: start;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-img {
+  border-radius: 12px;
+  background-color: #a3a3a3;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 72px;
+  width: 72px;
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.animation-3d {
+  animation: tada 5s 0.5s infinite linear;
+}
+
+.block-content {
+  padding: 15px 0px !important;
+}
+
+@keyframes tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  2%,
+  4% {
+    transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, -1deg);
+  }
+  6%,
+  10%,
+  14%,
+  18% {
+    transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 1deg);
+  }
+  8%,
+  12%,
+  8% {
+    transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -1deg);
+  }
+  20%,
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.img-banner div {
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 15px 10px;
+}
